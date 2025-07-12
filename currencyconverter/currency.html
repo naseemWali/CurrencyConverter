@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="currency.css">
+    <title>currency converter</title>
+</head>
+<body>
+    
+    <div class="container">
+    <h3>choose a currency to convert</h3>
+
+    <form method="get" class="form" action="/action.php">
+     <label for="quantity">chose a quantity:</label>
+     <input type="number" name="quantity" min="1" max="100000">
+
+     <label for="currency">choose a currency:</label>
+     
+        <select name="fromcurrency" class="select">
+            <option value="PKR">pakistani rupees</option>
+            <option value="INR">indian  rupees</option>
+            <option value="USD">us dollar</option>
+            <option value="EUR">euro</option>
+        </select>
+
+        <!-- <h2>to</h2>
+           <select name="tocurrency" class="select">
+            <option value="PKR">pakistani rupees</option>
+            <option value="INR">indian  rupees</option>
+            <option value="USD">us dollar</option>
+            <option value="EUR">euro</option>
+        </select> -->
+
+        <button class="btn" type="submit" id="btny">submit</button>
+
+        <div class="output">
+
+         <table>
+    <caption>converted currency table</caption>
+    <thead>
+        <tr>
+            <th>Currency</th>
+            <th>Currency Code</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+
+    <tbody>
+       
+    </tbody>  
+   
+   
+</table>
+        </div>
+
+    </form>
+
+    </div>
+
+    <script src="currency.js"></script>
+</body>
+</html>
